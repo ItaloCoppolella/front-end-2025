@@ -1,3 +1,6 @@
+@import url('contatti.css');
+@import url('blog.css');
+
 .title {
     color: red;
 }
@@ -7,7 +10,28 @@
 .blog {
     background-color: lightgray;
 }
-.services {
-    /* Il selettore .services ha una proprietà commentata */
-    /* color: lightblue; */
+.servizi {
+    background-color: lightblue; 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    background-color: yellow;
+    border: 10px solid red;
+}
+
+/*
+    li {
+        list-style: none;    Rimuove i punti elenco dalle liste 
+    }
+*/
