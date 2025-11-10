@@ -30,8 +30,20 @@ div {
     border: 10px solid red;
 }
 
-/*
-    li {
-        list-style: none;    Rimuove i punti elenco dalle liste 
-    }
-*/
+
+li {
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+}
+
+
+.title {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
