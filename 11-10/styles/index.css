@@ -1,0 +1,13 @@
+.title {
+    color: red;
+}
+.navbar {
+    color: red;
+}
+.blog {
+    background-color: lightgray;
+}
+.services {
+    /* Il selettore .services ha una proprietà commentata */
+    /* color: lightblue; */
+}
