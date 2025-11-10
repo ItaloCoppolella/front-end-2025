@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+<body>
+    <h1>Form di iscrizione</h1>
+    <fieldset>
+        
+        <form action="mailto:example@example.com">
+            <label for="name">Il tuo nome:</label>
+            <input type="text" required>
+            <br>
+            
+            <label for="email">La tua email:</label>
+            <input type="email" required>
+            <br>
+            
+            <label for="age">La tua età:</label>
+            <input type="number" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informazioni aggiuntive</legend>
+            <label for="message">Il tuo messaggio:</label>
+            <textarea id="message" required></textarea>
+            <br>
+            
+            <label for="date" required>Data di invio</label>
+            <input type="date" id="date" required>
+            <br>
+
+            <label for="file">Allega file</label>
+            <input type="file" required>
+        </fieldset>
+            <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

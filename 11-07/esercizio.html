@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italo Coppolella</title>
+</head>
+<body>
+    <main>
+        <h1>Italo Coppolella</h1>
+        <h2>Junior Developer</h2>
+        <p>
+            Ciao! Mi chiamo Italo Coppolella e sono un Junior Developer appassionato di tecnologia e programmazione.
+            <br>
+            Amo creare soluzioni innovative e migliorare continuamente le mie competenze nel campo dello sviluppo software.
+            <br>
+            Nel tempo libero, mi piace esplorare nuove tecnologie e lavorare su progetti personali che mi permettono di crescere professionalmente.
+        </p>
+    </main>
+
+    <section>
+        <!--Apertura della tabella-->
+    <table border="1">
+      <!-- Didascalia/descrizione della tabella-->
+      <caption>
+        Le mie competenze
+      </caption>
+      <thead>
+        <tr>
+          <!-- tr righe della tabella -->
+          <!--th teste della tabella (celle di intestazione)-->
+          <th>Categoria</th>
+          <th>Corso</th>
+          <th>Durata</th>
+          <th>Livello</th>
+        </tr>
+      </thead>
+      <!--tbody Corpo principale della tabella-->
+      <tbody>
+        <tr>
+          <td>Sviluppo Web</td>
+          <td>HTML</td>
+          <td>30 ore</td>
+          <td>Base</td>
+        </tr>
+
+        <tr>
+          <td>Sviluppo Web</td>
+          <td>JavaScript</td>
+          <td>40 ore</td>
+          <td>Intermedio</td>
+        </tr>
+
+        <tr>
+          <td>Design</td>
+          <td>React</td>
+          <td>25 ore</td>
+          <td>Base</td>
+        </tr>
+
+        <tr>
+          <!--Riga informativa-->
+          <!--Colspan unisce le caselle in orizzontale-->
+          <td colspan="4">Tutti i corsi includono materiale didattico</td>
+        </tr>
+      </tbody>
+      <!--Piè di tabella-->
+    </table>
+    </section>
+
+    <section>
+        <h3>Se desideri contattarmi, compila questo form:</h3>
+        <fieldset>
+            <legend>Contattami</legend>
+
+            <form action="mailto:italo@example.com">
+                <label for="name">Nome:</label>
+                <input type="text" required>
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" required>
+                <br>
+                
+                <label for="message">Messaggio:</label>
+                <textarea required></textarea>
+            <br>
+
+                <label for="date" required>Data di invio</label>
+                <input type="date" id="date" required>
+                <br>
+
+                <label for="file">Allega file</label>
+                <input type="file" required>
+            
+                <button type="submit">Invia</button>
+            </form>
+        </fieldset>
+    </section>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://www.github.com/" target="_blank">GitHub</a>
+    </footer>
+    
+</body>
+</html>
