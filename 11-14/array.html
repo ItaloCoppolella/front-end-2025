@@ -10,7 +10,18 @@
 
     <script>
         let colori = ["rosso", "verde", "blu"]; // possiamo usare sia let, sia const
+        colori.push("giallo");        // aggiunge un elemento alla fine dell'array
+        colori.unshift("viola");      // aggiunge un elemento all'inizio dell'array
+
         console.table(colori);                  // alternativo console.log(colori.length)
+
+        colori.pop();                 // rimuove l'ultimo elemento dell'array
+
+        console.table("Dopo aver applicato il metodo pop()",colori); 
+
+        for (let i = 0; i < colori.length; i++) {
+            console.log("Elemento in posizione", i, ":", colori[i]);
+        }
 
     </script>
 </body>
