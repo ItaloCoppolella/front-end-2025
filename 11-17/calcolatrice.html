@@ -3,10 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calcolatrice</title>
   </head>
   <body>
     <h1>Calcolatrice</h1>
+    <h2>Inserisci dei numeri nei form e clicca sul pulsante</h2>
+    <p>
+      Cliccando sul pulsante Calcola, verranno eseguite le operazioni somma, sottrazione, prodotto e divisione
+      prendendo i valori nei 2 form di riferimento.
+    </p>
+    
+    <input type="number" id="num1" required>
+    <input type="number" id="num2" required>
+    
+    <button onclick="eseguiCalcoli()">Calcola!</button>
+
+    <p>I risultati appariranno in console.log</p>
+
     <script src="calcolatrice.js"></script>
   </body>
 </html>
