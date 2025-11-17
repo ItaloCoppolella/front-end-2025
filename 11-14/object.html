@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let macchina = {
+            marca: "Ford",
+            modello: "Mustang",
+            anno: 1969
+        };
+        console.log(macchina);
+
+        let nome = "Luca"; // variabile globale
+
+        let persona = {
+            nome: "Mario", // non è una variabile, è una proprietà dell'oggetto
+            cognome: "Rossi",
+            età: 30,
+            indirizzo: {
+                via: "Via Roma",
+                città: "Roma",
+                CAP: "00100"
+            },
+            saluta: function() {
+                console.log("Ciao, mi chiamo " + this.nome + " " + this.cognome);
+            }
+            
+            //senza il this davanti alla variabile, cerca la variabile nel contesto globale e se non lo trova dà errore
+            // nome: "Mario" non lo considerà perchè è una variabile
+        };
+            console.log("Ciao, mi chiamo " + persona.nome);
+
+    </script>
+</body>
+</html>

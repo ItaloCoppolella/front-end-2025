@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini progetto flash</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Mini progetto flash</h1>
+
+            <p>
+                <ol>
+                    <li>Fai inserire due numeri all’utente con prompt() e mostra la loro somma con alert().</li>
+                    <li>Crea un array di tre nomi e fai un ciclo che li saluta tutti.</li>
+                    <li>Crea un oggetto studente e stampa in alert: "Mario ha preso 28".</li>
+                    <li>Scrivi una funzione che, data una parola, restituisce la parola in maiuscolo.</li>
+                    <li>Stampa tutti i quadrati dei numeri da 1 a 10.</li>
+                </ol>
+            </p>
+        </header>
+    </main>
+
+    <script>
+        let a = prompt("Inserisci il primo numero:");
+        let b = prompt("Inserisci il secondo numero:");
+
+        function somma(a, b) {
+            return a + b;
+        }
+
+        let sum = somma(a, b);
+
+        alert("La somma dei due numeri è: " + sum);
+
+        let listaNomi = ["Alice", "Bob", "Charlie"];
+        
+        for(let i = 0; i < listaNomi.length; i++) {
+            console.log("Ciao ", listaNomi[i], "!");
+        }
+    </script>
+</body>
+</html>
