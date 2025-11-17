@@ -20,3 +20,15 @@ switch (giorno) {
         console.log("Giorno non valido");
         // break; non necessario nell'ultimo caso
 }
+
+function persona(nome = "Italo"){
+    return console.log("sono", nome);
+}
+
+persona();
+persona("Mario");
+
+// Arrow function
+const somma = (a, b) => a + b;
+
+console.log(somma(5, 3));
