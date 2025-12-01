@@ -8,6 +8,7 @@ function RegistrationForm() {
         password: ''
     });
 
+    // Funzione chiamata ogni volta che un input cambia
     const handleChange = (event) => {
       const { name, value } = event.target;
       setFormData({
@@ -16,6 +17,7 @@ function RegistrationForm() {
       });
     };
 
+    // Funzione che valida i dati del form
     const validate = () => {
       const newErrors = {}
       if (!formData.name) {
@@ -34,14 +36,23 @@ function RegistrationForm() {
       return newErrors;
     };
 
+    const handleSubmit = (event) => {
+      event.preventDefault(); // Previene il ricaricamento della pagina
+      const formErrors = validate(); // Chiama la validazione
+      setErrors(formErrors); // Mostra gli errori
+    };
+
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>
             Nome: <input type="text" name="name" value={formData.name} onChange={handleChange} />
+            {errors.name && <p>{errors.name}</p>}
             <br />
             Email: <input type="email" name="email" value={formData.email} onChange={handleChange} />
+            {errors.email && <p>{errors.email}</p>}
             <br />
             Password: <input type="password" name="password" value={formData.password} onChange={handleChange}  />
+            {errors.password && <p>{errors.password}</p>}
           </label>
           <br />
           <button type="submit">Sign In!</button>
