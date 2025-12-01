@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function RegistrationForm() {
+    const [errors, setErrors] = useState({}) //con {} stiamo inizializzando un oggetto vuoto, con [] un array vuoto
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -15,6 +16,24 @@ function RegistrationForm() {
       });
     };
 
+    const validate = () => {
+      const newErrors = {}
+      if (!formData.name) {
+        newErrors.name = "Il nome è obbligatorio"
+      }
+      if (!formData.email) {
+        newErrors.email = "L'email è obbligatoria"
+      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = "L'email non è valida";
+      }
+      if (!formData.password) {
+        newErrors.password = "La password è obbligatoria"
+      } else if (formData.password.length < 6) {
+        newErrors.password = "La password deve essere di almeno 6 caratteri";
+      }
+      return newErrors;
+    };
+
     return(
         <form>
           <label>
@@ -25,7 +44,7 @@ function RegistrationForm() {
             Password: <input type="password" name="password" value={formData.password} onChange={handleChange}  />
           </label>
           <br />
-          <button type="submit">Registrati</button>
+          <button type="submit">Sign In!</button>
         </form>
     );
 }
